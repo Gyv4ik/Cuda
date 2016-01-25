@@ -1,0 +1,78 @@
+var gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    rename = require('gulp-rename'),
+    browserSync = require('browser-sync').create(),
+    reload = browserSync.reload,
+    path = require('path');
+    url = require('gulp-css-url-adjuster'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer-core'),
+    plumber = require('gulp-plumber'),
+    sass = require('gulp-sass');
+
+var params = {
+  out: 'public',
+  htmlSrc: 'index.html',
+  levels: ['common.blocks']
+};
+
+var getFileNames = require('html2bl').getFileNames(params);
+
+gulp.task('default', ['server', 'build']);
+
+gulp.task('server', function() {
+  browserSync.init({
+    server: params.out
+  });
+
+  gulp.watch('*.html', ['html']);
+  gulp.watch(params.levels.map(function(level) {
+    var sassGlob = level + '/**/*.sass';
+    console.log(sassGlob);
+    return sassGlob;
+  }), ['css']);
+  gulp.watch('./sass/*.sass', ['css']);
+});
+
+gulp.task('build', ['html', 'css', 'images']);
+
+gulp.task('html', function() {
+  gulp.src(params.htmlSrc)
+  .pipe(plumber())
+  .pipe(rename('index.html'))
+  .pipe(gulp.dest(params.out))
+  .pipe(reload({ stream: true }));
+});
+
+gulp.task('css', function() {
+  getFileNames.then(function(files) {
+    console.log(files);
+    gulp.src(files.sass)
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('styles.css'))
+    .pipe(url({prepend: 'images/'}))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest(params.out))
+    .pipe(reload({ stream: true }));
+    gulp.src('./sass/*.sass')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('base.css'))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest(params.out))
+    .pipe(reload({ stream: true }));
+  })
+  .done();
+});
+
+gulp.task('images', function() {
+  getFileNames.then(function(source) {
+    gulp.src(source.dirs.map(function(dir) {
+      var imgGlob = path.resolve(dir) + '/*.{jpg,png,svg}';
+      console.log(imgGlob);
+      return imgGlob;
+    }))
+    .pipe(gulp.dest(path.join(params.out, 'images')));
+  })
+  .done();
+});

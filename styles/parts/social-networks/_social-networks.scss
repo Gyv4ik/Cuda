@@ -1,0 +1,26 @@
+.social-networks {
+    font-size: 0;
+    line-height: 0;
+}
+
+.social-networks__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-left: 6px;
+
+    border-radius: 50%;
+}
+
+.social-networks__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+}

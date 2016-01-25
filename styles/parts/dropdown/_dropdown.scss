@@ -1,0 +1,36 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    background-color: rgba(0,0,0, .7);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown__item {
+    font-size: 1rem;
+    line-height: 2rem;
+
+    list-style-type: none;
+
+    text-transform: uppercase;
+    height: 20vh;
+
+    :hover {
+        background-color: grey;
+    }
+}
+.dropdown__link {
+    font-size: 1.2rem;
+	color: #fff;
+}

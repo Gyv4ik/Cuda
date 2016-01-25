@@ -1,0 +1,59 @@
+.welcome {
+    display: block;
+    position: relative;
+    letter-spacing: 0;
+
+    color: white;
+    background-color: $violet;
+}
+
+.welcome__header {
+    margin-bottom: 136px;
+}
+
+.welcome__wrapper {
+    display: table-row;
+}
+
+.welcome__container {
+    display: table;
+    padding: 60px 0;
+    min-height: 100vh;
+
+}
+
+.welcome__content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.welcome__logo {
+    float: left;
+
+    margin-left: 50px;
+}
+
+.welcome__nav {
+    float: right;
+
+    margin-top: 3px;
+    margin-right: 18px;
+}
+
+.welcome__catchword {
+    font-size: 2.625rem;
+    font-weight: bold;
+    line-height: 1.158em;
+
+    width: 81.25%;
+    margin: 0 auto 57px auto;
+
+    text-align: center;
+}
+
+.welcome__button {
+    background-color: #eb7d4b;
+}
+.welcome__button:active {
+    background-color: darken(#eb7d4b, 10%);
+}

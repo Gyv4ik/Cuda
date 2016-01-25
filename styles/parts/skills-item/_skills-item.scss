@@ -1,0 +1,65 @@
+.skills-item {
+    display: inline-block;
+
+    width: 50%;
+
+    vertical-align: top;
+}
+
+.skills-item__progress-bar {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 30px auto;
+    padding: 13px;
+
+    border-radius: 50%;
+    background-color: #dfe8ed;
+    background-image: linear-gradient(90deg,transparent 50%, #30bae7 50%),
+    linear-gradient(0deg, #30bae7 50%, transparent 50%);
+}
+
+.skills-item__progress-bar--1 {
+    background-image: linear-gradient(90deg,transparent 50%, #30bae7 50%),
+    linear-gradient(60deg, #30bae7 50%, transparent 50%);
+}
+
+.skills-item__progress-bar--2 {
+    background-image: linear-gradient(90deg,transparent 50%, #d74680 50%),
+    linear-gradient(0deg, #d74680 50%, transparent 50%);
+}
+
+.skills-item__progress-bar--3 {
+    background-image: linear-gradient(90deg,transparent 50%, #15c7a8 50%),
+    linear-gradient(-30deg, #15c7a8 50%, transparent 50%);
+}
+
+.skills-item__progress-bar--4 {
+    background-image: linear-gradient(90deg,transparent 50%, #eb7d4b 50%),
+    linear-gradient(30deg, #eb7d4b 50%, transparent 50%);
+}
+
+.skills-item__progress-numb {
+    font-size: 50px;
+    font-weight: lighter;
+
+    width: 134px;
+    height: 134px;
+    padding: 62px 0 0 15px;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: white;
+}
+
+.skills-item__percent {
+    font-size: 32px;
+}
+
+.skills-item__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1em;
+
+    text-transform: uppercase;
+}

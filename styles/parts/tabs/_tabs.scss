@@ -1,0 +1,36 @@
+.tabs {
+    margin: 0 auto;
+}
+
+.tabs__item {
+    font-size: 1.125rem;
+    line-height: 2.11em;
+
+    display: inline-block;
+
+    width: 84px;
+    margin: 0 4px;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.tabs__item:nth-of-type(3) {
+    width: 90px;
+}
+
+.tabs__item:last-of-type {
+    width: 90px;
+    margin-right: 0;
+}
+
+.tabs__item--active {
+    background-color: white;
+}
+
+.tabs__item:hover {
+    cursor: pointer;
+    background-color: #fff;
+}

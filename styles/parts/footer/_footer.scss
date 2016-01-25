@@ -1,0 +1,36 @@
+.footer {
+    padding: 41px 0;
+
+    background-color: #344b8e;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+
+}
+
+.footer__social-newtworks {
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer__row {
+    display: inline-block;
+}
+
+.footer__link {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25em;
+
+    display: inline-block;
+
+    color: white;
+    margin: 0 20px;
+}
+
+.footer__link:active {
+    color: $blue;
+}

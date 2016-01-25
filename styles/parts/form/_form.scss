@@ -1,0 +1,79 @@
+.form {
+    width: 76.79%;
+    margin: 0 auto;
+}
+
+.form__row {
+    margin-bottom: 28px;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
+
+input::-webkit-input-placeholder:after,
+textarea::-webkit-input-placeholder:after {
+    content: ' *';
+
+    color: #b74153;
+}
+
+input,
+textarea {
+    font-family: 'Titillium Web';
+    font-size: 1.125rem;
+    line-height: 1.5em;
+
+    display: block;
+
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+input {
+    width: 48.14%;
+    padding: 14px 25px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 16px 25px;
+
+    resize: vertical;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+textarea::-moz-input-placeholder {
+    opacity: 1;
+    color: #fff;
+}
+
+textarea:-webkit-input-placeholder:after {
+    content: ' *';
+
+    color: #b74153;
+}
+
+textarea:-moz-input-placeholder:after {
+    opacity: 1;
+    content: ' *';
+
+    color: #b74153;
+}
+
+.form__name {
+    float: left;
+}
+
+.form__mail {
+    float: right;
+}

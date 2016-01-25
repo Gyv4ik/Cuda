@@ -1,0 +1,32 @@
+.services-item {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5em;
+
+    width: 50%;
+    padding: 0 10px;
+
+    vertical-align: top;
+}
+
+.services-item__img-cont {
+    height: 134px;
+    margin-bottom: 50px;
+}
+
+.services-item__img {
+    max-width: 100%;
+    // margin: 0 auto;
+}
+
+.services-item__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2em;
+
+    text-transform: uppercase;
+}
+
+.services-item__info {
+    font-weight: lighter;
+}

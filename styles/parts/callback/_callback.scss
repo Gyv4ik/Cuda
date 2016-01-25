@@ -1,0 +1,20 @@
+.callback {
+    color: white;
+    background-color: $dark-blue;
+}
+
+.callback__header {
+    margin-bottom: 75px;
+}
+
+.callback__form {
+    margin-bottom: 60px;
+}
+
+.callback__button {
+    background-color: $blue;
+}
+
+.callback__button:active {
+    background-color: darken($blue, 10%);
+}

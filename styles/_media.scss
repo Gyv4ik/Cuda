@@ -1,0 +1,143 @@
+@media screen and (max-width: 1023px) {
+    .welcome__catchword {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .footer__link {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav__menu {
+        display: none;
+    }
+    .nav__toggle-menu {
+        display: block;
+    }
+    .services__row {
+        width: 100%;
+    }
+    .services__row:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    .services__row {
+        margin-bottom: 50px;
+    }
+    .skills__row {
+        width: 100%;
+    }
+    .form__name,
+    .form__mail {
+        width: 100%;
+    }
+    .form__name {
+        margin-bottom: 30px;
+    }
+    .responses__row {
+        margin-bottom: 0;
+    }
+    .responses-item {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .responses-item--last {
+        margin-bottom: 0;
+    }
+    .footer__row {
+        width: 100%;
+    }
+    .footer__row:first-of-type {
+        margin-bottom: 5px;
+    }
+    .footer__link {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .our-team__row {
+        margin-bottom: 0;
+    }
+    .our-team-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    html {
+        font-size: 12px;
+    }
+    .welcome {
+        padding: 40px 0;
+    }
+    .form {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .button {
+        width: 200px;
+    }    
+    .section__descr {
+        width: 100%;
+    }
+    .welcome__catchword {
+        font-size: 2rem;
+    }
+    .services__row {
+        margin-bottom: 0;
+    }
+    .services-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .skills__row {
+        margin-bottom: 0;
+    }
+    .skills-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .portfolio__row {
+        margin-bottom: 0;
+    }
+    .portfolio__item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .portfolio__item__last {
+        margin-bottom: 0;
+    }
+    .tabs__item {
+        width: 54px;
+    }
+
+    .tabs__item:nth-of-type(3) {
+        width: 60px;
+    }
+
+    .tabs__item:last-of-type {
+        width: 60px;
+        margin-right: 0;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer__social-networks {
+        width: 100px;
+    }
+    .footer__row {
+        text-align: left;
+    }
+    .footer__row:first-of-type {
+        margin-bottom: 0;
+    }
+}
